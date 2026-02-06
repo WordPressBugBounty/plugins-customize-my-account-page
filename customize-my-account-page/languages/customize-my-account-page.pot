@@ -1,0 +1,737 @@
+# Copyright (C) 2025 ThemeGrill
+# This file is distributed under the GNU General Public License v3 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Customize My Account Page 1.0.0\n"
+"Report-Msgid-Bugs-To: "
+"https://wordpress.org/support/plugin/customize-my-account-page\n"
+"POT-Creation-Date: 2025-11-25 10:42:03+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2025-MO-DA HO:MI+ZONE\n"
+"Last-Translator: WPEverest <https://wpeverest.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Country: United States\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
+"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
+"X-Generator: grunt-wp-i18n 1.0.4\n"
+
+#: includes/AccountMenu.php:124
+msgid "Dashboard"
+msgstr ""
+
+#: includes/AccountMenu.php:125
+msgid "Orders"
+msgstr ""
+
+#: includes/AccountMenu.php:126
+msgid "Downloads"
+msgstr ""
+
+#: includes/AccountMenu.php:127
+msgid "Addresses"
+msgstr ""
+
+#: includes/AccountMenu.php:128
+msgid "Payment Methods"
+msgstr ""
+
+#: includes/AccountMenu.php:129
+msgid "Account Details"
+msgstr ""
+
+#: includes/AccountMenu.php:130
+msgid "Logout"
+msgstr ""
+
+#: includes/AccountMenu.php:139
+msgid "Memberships"
+msgstr ""
+
+#: includes/AccountMenu.php:144
+msgid "Subscriptions"
+msgstr ""
+
+#: includes/AccountMenu.php:149
+msgid "Team"
+msgstr ""
+
+#: includes/Ajax.php:105 includes/Ajax.php:311
+msgid "User is not logged in"
+msgstr ""
+
+#: includes/Ajax.php:112 includes/Ajax.php:318
+msgid "Nonce is required"
+msgstr ""
+
+#: includes/Ajax.php:120 includes/Ajax.php:327
+msgid "Invalid nonce"
+msgstr ""
+
+#: includes/Ajax.php:130
+msgid "File is required"
+msgstr ""
+
+#: includes/Ajax.php:168
+msgid "Temporary file is not readable"
+msgstr ""
+
+#: includes/Ajax.php:178
+msgid "Invalid image type. Only JPG and PNG are allowed."
+msgstr ""
+
+#: includes/Ajax.php:184
+msgid "Could not read file contents"
+msgstr ""
+
+#: includes/Ajax.php:193
+msgid "The image appears to be corrupted"
+msgstr ""
+
+#: includes/Ajax.php:213
+msgid "Image contains suspicious content"
+msgstr ""
+
+#: includes/Ajax.php:224
+msgid "Suspicious image metadata"
+msgstr ""
+
+#: includes/Ajax.php:256
+msgid "Something went wrong, try again"
+msgstr ""
+
+#: includes/Ajax.php:293
+msgid "Uploaded successfully"
+msgstr ""
+
+#: includes/Ajax.php:338
+msgid "File deleted successfully."
+msgstr ""
+
+#: includes/Ajax.php:342
+msgid "Missing the attachment id."
+msgstr ""
+
+#: includes/Functions/CoreFunctions.php:374
+#. translators: The upload_max_filesize directive in php.ini
+msgid "The uploaded file exceeds the upload_max_filesize (%s) directive in php.ini."
+msgstr ""
+
+#: includes/Functions/CoreFunctions.php:377
+msgid ""
+"The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in "
+"the HTML form."
+msgstr ""
+
+#: includes/Functions/CoreFunctions.php:378
+msgid "The uploaded file was only partially uploaded."
+msgstr ""
+
+#: includes/Functions/CoreFunctions.php:379
+msgid "No file was uploaded."
+msgstr ""
+
+#: includes/Functions/CoreFunctions.php:380
+msgid "Missing a temporary folder."
+msgstr ""
+
+#: includes/Functions/CoreFunctions.php:381
+msgid "Failed to write file to disk."
+msgstr ""
+
+#: includes/Functions/CoreFunctions.php:382
+msgid "File upload stopped by extension."
+msgstr ""
+
+#: includes/Functions/Formatting.php:770
+msgid "Day(s)"
+msgstr ""
+
+#: includes/Functions/Formatting.php:771
+msgid "Week(s)"
+msgstr ""
+
+#: includes/Functions/Formatting.php:772
+msgid "Month(s)"
+msgstr ""
+
+#: includes/Functions/Formatting.php:773
+msgid "Year(s)"
+msgstr ""
+
+#: includes/Notice.php:81
+msgid "Dismiss"
+msgstr ""
+
+#: includes/Settings.php:50 includes/Settings.php:484
+msgid "Endpoints"
+msgstr ""
+
+#: includes/Settings.php:51 includes/Settings.php:493
+#: includes/WoocommerceCustomizer.php:264
+#: templates/admin/dialogs/restore-defaults.php:22
+msgid "Settings"
+msgstr ""
+
+#: includes/Settings.php:199
+msgid "Settings reset successfully."
+msgstr ""
+
+#: includes/Settings.php:240
+msgid "Settings saved successfully"
+msgstr ""
+
+#: includes/Settings.php:267 includes/Settings.php:785
+msgid "Nonce is required."
+msgstr ""
+
+#: includes/Settings.php:278 includes/Settings.php:796
+msgid "Invalid nonce."
+msgstr ""
+
+#: includes/Settings.php:315 includes/WoocommerceCustomizer.php:331
+msgid "Invalid URL. Must be a full URL (https://...) or a hash link (#section)."
+msgstr ""
+
+#: includes/Settings.php:451
+msgid "Endpoints saved successfully"
+msgstr ""
+
+#: includes/Settings.php:472 includes/Settings.php:483
+#: includes/Settings.php:492
+msgid "Customize My Account Page For WooCommerce"
+msgstr ""
+
+#: includes/Settings.php:473
+msgid "Customize My Account"
+msgstr ""
+
+#: includes/Settings.php:806
+msgid "Debug settings reset successfully."
+msgstr ""
+
+#: includes/Settings.php:834
+msgid "Debug settings saved successfully"
+msgstr ""
+
+#: includes/SmartTags.php:51
+msgid "Add Smart Tags"
+msgstr ""
+
+#: includes/SmartTags.php:192
+msgid "You have not set up this type of address yet."
+msgstr ""
+
+#: includes/SmartTags.php:252
+msgid "User ID"
+msgstr ""
+
+#: includes/SmartTags.php:253
+msgid "User Name"
+msgstr ""
+
+#: includes/SmartTags.php:254
+msgid "User Email"
+msgstr ""
+
+#: includes/SmartTags.php:255
+msgid "First Name"
+msgstr ""
+
+#: includes/SmartTags.php:256
+msgid "Last Name"
+msgstr ""
+
+#: includes/SmartTags.php:257
+msgid "User Display Name"
+msgstr ""
+
+#: includes/SmartTags.php:258
+msgid "User IP Address"
+msgstr ""
+
+#: includes/SmartTags.php:259
+msgid "Site Name"
+msgstr ""
+
+#: includes/SmartTags.php:260
+msgid "Site URL "
+msgstr ""
+
+#: includes/SmartTags.php:261
+msgid "Page URL"
+msgstr ""
+
+#: includes/SmartTags.php:262
+msgid "Current Date"
+msgstr ""
+
+#: includes/SmartTags.php:263
+msgid "Current Time"
+msgstr ""
+
+#: includes/SmartTags.php:264
+msgid "Billing address"
+msgstr ""
+
+#: includes/SmartTags.php:265
+msgid "Billing Company"
+msgstr ""
+
+#: includes/SmartTags.php:266
+msgid "Shipping address"
+msgstr ""
+
+#: includes/SmartTags.php:267
+msgid "Shipping Company"
+msgstr ""
+
+#: includes/WoocommerceCustomizer.php:332
+msgid "Smart Tags"
+msgstr ""
+
+#: includes/WoocommerceCustomizer.php:333
+msgid "Search Tags..."
+msgstr ""
+
+#: includes/WoocommerceCustomizer.php:529
+msgid "Enable"
+msgstr ""
+
+#: includes/WoocommerceCustomizer.php:530
+msgid "Remove"
+msgstr ""
+
+#: includes/WoocommerceCustomizer.php:531
+msgid "Select an icon"
+msgstr ""
+
+#: includes/WoocommerceCustomizer.php:532
+msgid "Select user roles"
+msgstr ""
+
+#: includes/WoocommerceCustomizer.php:533
+msgid "Cancel"
+msgstr ""
+
+#: includes/WoocommerceCustomizer.php:534
+msgid "Delete"
+msgstr ""
+
+#: includes/WoocommerceCustomizer.php:535
+msgid "Reset"
+msgstr ""
+
+#: includes/WoocommerceCustomizer.php:536
+msgid "Add"
+msgstr ""
+
+#: includes/WoocommerceCustomizer.php:537
+msgid "Not available "
+msgstr ""
+
+#: includes/WoocommerceCustomizer.php:538
+msgid "Available "
+msgstr ""
+
+#: includes/WoocommerceCustomizer.php:539
+msgid "Slug cannot be empty "
+msgstr ""
+
+#: includes/WoocommerceCustomizer.php:540
+msgid "Settings "
+msgstr ""
+
+#: includes/WoocommerceCustomizer.php:541
+msgid "Design Customization "
+msgstr ""
+
+#: includes/WoocommerceCustomizer.php:542
+msgid ""
+"Restore the general settings and remove the added endpoints, group and "
+"links."
+msgstr ""
+
+#: includes/WoocommerceCustomizer.php:543
+msgid "Remove all the design customization."
+msgstr ""
+
+#: includes/WoocommerceCustomizer.php:544
+msgid "Invalid slug. "
+msgstr ""
+
+#: includes/WoocommerceCustomizer.php:545
+msgid "Label cannot be empty."
+msgstr ""
+
+#: includes/WoocommerceCustomizer.php:546
+msgid "Could Not Save Changes."
+msgstr ""
+
+#: includes/WoocommerceCustomizer.php:547
+msgid "Please resolve the following errors and try again."
+msgstr ""
+
+#: includes/WoocommerceCustomizer.php:548
+msgid "ok"
+msgstr ""
+
+#: includes/WoocommerceCustomizer.php:549
+msgid ""
+"Slug can only contains alphabets,numbers, underscore(_) and dash(-) "
+"characters."
+msgstr ""
+
+#: includes/WoocommerceCustomizer.php:550
+msgid "Slug must begin and end with alphabets and numbers."
+msgstr ""
+
+#: includes/WoocommerceCustomizer.php:551
+msgid "Slug must be 3 characters in length."
+msgstr ""
+
+#: includes/WoocommerceCustomizer.php:552 templates/admin/customization.php:50
+msgid "Save Changes"
+msgstr ""
+
+#: includes/WoocommerceCustomizer.php:553
+msgid "Discard"
+msgstr ""
+
+#: includes/WoocommerceCustomizer.php:664
+msgid ""
+"WooCommerce is required for this plugin to work. Please, activate "
+"WooCommerce first."
+msgstr ""
+
+#: includes/WoocommerceCustomizer.php:732
+msgid "Custom Endpoint"
+msgstr ""
+
+#: templates/admin/dialogs/restore-defaults.php:13
+msgid "Confirm Restore"
+msgstr ""
+
+#: templates/admin/dialogs/restore-defaults.php:16
+msgid ""
+"Restoring will reset the selected options and cannot be undone. Are you "
+"sure?"
+msgstr ""
+
+#: templates/admin/dialogs/restore-defaults.php:28
+msgid "Design Customization"
+msgstr ""
+
+#: templates/admin/endpoint-dialog.php:14
+msgid "Name"
+msgstr ""
+
+#: templates/admin/endpoint-tab.php:48
+msgid "This is a free version endpoint and cannot be deleted."
+msgstr ""
+
+#: templates/admin/endpoint-tab.php:57
+msgid "This is a default endpoint and cannot be deleted."
+msgstr ""
+
+#: templates/admin/endpoints/endpoint.php:35
+msgid "Endpoint Label"
+msgstr ""
+
+#: templates/admin/endpoints/endpoint.php:36
+msgid "The display name shown for this tab in the My Account menu."
+msgstr ""
+
+#: templates/admin/endpoints/endpoint.php:52
+msgid "Slug"
+msgstr ""
+
+#: templates/admin/endpoints/endpoint.php:53
+msgid "The text that appears in the URL for this tab."
+msgstr ""
+
+#: templates/admin/endpoints/endpoint.php:71
+msgid "Endpoint Icon"
+msgstr ""
+
+#: templates/admin/endpoints/endpoint.php:72
+msgid "Choose or upload an icon to display for this tab on the My Account page."
+msgstr ""
+
+#: templates/admin/endpoints/endpoint.php:100
+#: templates/admin/endpoints/endpoint.php:114
+#: templates/admin/endpoints/link.php:94 templates/admin/endpoints/link.php:111
+#: templates/admin/js/endpoint.php:91 templates/admin/js/endpoint.php:108
+#: templates/admin/js/link.php:90 templates/admin/js/link.php:104
+msgid "Choose Icon"
+msgstr ""
+
+#: templates/admin/endpoints/endpoint.php:168
+#: templates/admin/endpoints/link.php:165 templates/admin/js/link.php:155
+msgid "CSS Class"
+msgstr ""
+
+#: templates/admin/endpoints/endpoint.php:169
+#: templates/admin/endpoints/link.php:166 templates/admin/js/link.php:156
+msgid "Add additional CSS classes for advanced styling."
+msgstr ""
+
+#: templates/admin/endpoints/endpoint.php:184
+#: templates/admin/endpoints/link.php:181 templates/admin/js/endpoint.php:173
+#: templates/admin/js/link.php:170
+msgid "User Roles"
+msgstr ""
+
+#: templates/admin/endpoints/endpoint.php:185
+msgid ""
+"Choose which types of users (e.g., customers, shop managers, or "
+"administrators) can view this tab."
+msgstr ""
+
+#: templates/admin/endpoints/endpoint.php:200
+#: templates/admin/js/endpoint.php:188
+msgid "Custom Content"
+msgstr ""
+
+#: templates/admin/endpoints/endpoint.php:201
+msgid ""
+"Add content to show on this tab on My Account page. Supports text, "
+"shortcodes, media, and HTML."
+msgstr ""
+
+#: templates/admin/endpoints/endpoint.php:231
+#: templates/admin/js/endpoint.php:203
+msgid "Custom Content Position"
+msgstr ""
+
+#: templates/admin/endpoints/endpoint.php:232
+#: templates/admin/js/endpoint.php:204
+msgid "Choose the location where custom content should appear."
+msgstr ""
+
+#: templates/admin/endpoints/endpoint.php:238
+#: templates/admin/js/endpoint.php:210
+msgid "Before default content"
+msgstr ""
+
+#: templates/admin/endpoints/endpoint.php:239
+msgid "Override default content"
+msgstr ""
+
+#: templates/admin/endpoints/endpoint.php:240
+#: templates/admin/js/endpoint.php:211
+msgid "After default content"
+msgstr ""
+
+#: templates/admin/endpoints/link.php:35 templates/admin/js/link.php:34
+msgid "URL"
+msgstr ""
+
+#: templates/admin/endpoints/link.php:36 templates/admin/js/link.php:35
+msgid "The web address that this tab opens."
+msgstr ""
+
+#: templates/admin/endpoints/link.php:51 templates/admin/js/link.php:50
+msgid "Link Label"
+msgstr ""
+
+#: templates/admin/endpoints/link.php:52 templates/admin/js/link.php:51
+msgid "The display name shown for this link in the My Account menu."
+msgstr ""
+
+#: templates/admin/endpoints/link.php:68 templates/admin/js/link.php:66
+msgid "Link Icon"
+msgstr ""
+
+#: templates/admin/endpoints/link.php:95 templates/admin/js/link.php:67
+msgid "Choose or upload an icon to display for this link on the My Account page."
+msgstr ""
+
+#: templates/admin/endpoints/link.php:182 templates/admin/js/link.php:171
+msgid ""
+"Choose which types of users (e.g., customers, shop managers, or "
+"administrators) can view this link."
+msgstr ""
+
+#: templates/admin/endpoints/link.php:197 templates/admin/js/link.php:185
+msgid "Open Link In a New Tab?"
+msgstr ""
+
+#: templates/admin/endpoints/link.php:198
+msgid "Allow link to open in a new tab."
+msgstr ""
+
+#: templates/admin/js/endpoint.php:34
+msgid "Label"
+msgstr ""
+
+#: templates/admin/js/endpoint.php:35
+msgid "Endpoint label."
+msgstr ""
+
+#: templates/admin/js/endpoint.php:50
+msgid "slug"
+msgstr ""
+
+#: templates/admin/js/endpoint.php:51
+msgid "Endpoint slug."
+msgstr ""
+
+#: templates/admin/js/endpoint.php:67
+msgid "Icon"
+msgstr ""
+
+#: templates/admin/js/endpoint.php:68 templates/admin/js/endpoint.php:92
+#: templates/admin/js/endpoint.php:109
+msgid "Choose an icon for the endpoint."
+msgstr ""
+
+#: templates/admin/js/endpoint.php:157
+msgid "Additional CSS Class(es)"
+msgstr ""
+
+#: templates/admin/js/endpoint.php:158
+msgid "Add CSS Class. Use this CSS class to style the endpoint."
+msgstr ""
+
+#: templates/admin/js/endpoint.php:174
+msgid ""
+"Endpoint will be visible to selected User Roles only. By default, endpoints "
+"will be visible to all users."
+msgstr ""
+
+#: templates/admin/js/endpoint.php:189
+msgid "Enter custom content for endpoint."
+msgstr ""
+
+#: templates/admin/tab-content/debug.php:19
+msgid "Enable Debug"
+msgstr ""
+
+#: templates/admin/tab-content/debug.php:21
+msgid "Enabling this option will load unminified JS scripts and CSS styles."
+msgstr ""
+
+#: templates/admin/tab-content/debug.php:35
+msgid "Enable debug mode."
+msgstr ""
+
+#: templates/admin/tab-content/debug.php:42
+msgid "Frontend Libraries"
+msgstr ""
+
+#: templates/admin/tab-content/debug.php:43
+msgid ""
+"You can enable/disable javascript libraries which are loaded in WooCommerce "
+"MyAccount Page to resolve library conflict with other plugins."
+msgstr ""
+
+#: templates/admin/tab-content/debug.php:50
+msgid "Dropzone"
+msgstr ""
+
+#: templates/admin/tab-content/debug.php:56
+#: templates/admin/tab-content/debug.php:77
+msgid "CSS"
+msgstr ""
+
+#: templates/admin/tab-content/debug.php:63
+#: templates/admin/tab-content/debug.php:84
+msgid "JS"
+msgstr ""
+
+#: templates/admin/tab-content/debug.php:71
+msgid "jQuery Scroll Tabs"
+msgstr ""
+
+#: templates/admin/tab-content/endpoints.php:50
+msgid "Confirm Delete"
+msgstr ""
+
+#: templates/admin/tab-content/endpoints.php:53
+msgid "It will be permanently deleted and cannot be recovered. Are you sure?"
+msgstr ""
+
+#: templates/admin/tab-content/endpoints.php:58
+msgid "Do you want to continue?"
+msgstr ""
+
+#: templates/admin/tab-content/endpoints.php:61
+msgid "Unsaved changes will be permanently lost. Discard anyway"
+msgstr ""
+
+#: templates/admin/tab-content/settings.php:20
+msgid "Account Profile Picture"
+msgstr ""
+
+#: templates/admin/tab-content/settings.php:21
+msgid ""
+"Allow customers to upload a profile picture on their WooCommerce account "
+"page."
+msgstr ""
+
+#: templates/admin/tab-content/settings.php:41
+msgid "Load Unminified Assets"
+msgstr ""
+
+#: templates/admin/tab-content/settings.php:42
+msgid "Load uncompressed CSS and JS files to help with debugging and development."
+msgstr ""
+
+#: templates/admin/tab-content/settings.php:58
+msgid "Account Page Libraries"
+msgstr ""
+
+#: templates/admin/tab-content/settings.php:59
+msgid ""
+"Control which CSS and JS libraries are loaded on the WooCommerce account "
+"page. Uncheck to test for theme or plugin conflicts."
+msgstr ""
+
+#: templates/admin/tab-content/settings.php:65
+msgid "Dropzone - CSS"
+msgstr ""
+
+#: templates/admin/tab-content/settings.php:72
+msgid "Dropzone - JS"
+msgstr ""
+
+#: templates/admin/tabs.php:36
+msgid "Add link"
+msgstr ""
+
+#: templates/admin/tabs.php:40
+msgid "View My Account"
+msgstr ""
+
+#: templates/frontend/user-avatar.php:18
+#. translators: %s: Maximum allowed upload size in MB
+msgid "Upload failed. Maximum allowed size is %s MB."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Customize My Account Page"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Allows you to register custom WooCommerce tabs on my-account page and "
+"customize the design."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "ThemeGrill"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://themegrill.com"
+msgstr ""

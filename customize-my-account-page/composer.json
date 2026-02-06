@@ -1,0 +1,57 @@
+{
+	"name": "themegrill/customize-my-account-page",
+	"version": "1.0.0",
+	"description": "A plugin for customizing WooCommerce my account page.",
+	"authors": [
+		{
+			"name": "themegrill",
+			"email": "hello@themegrill.com"
+		}
+	],
+	"autoload": {
+		"files": [
+			"includes/Functions/CoreFunctions.php",
+			"includes/Functions/TemplateFunctions.php",
+			"includes/Functions/TemplateHooks.php",
+			"includes/Functions/Formatting.php"
+		],
+		"psr-4": {
+			"ThemeGrill\\WoocommerceCustomizer\\": "includes/"
+		}
+	},
+	"require-dev": {
+		"woocommerce/woocommerce-sniffs": "^1.0",
+		"squizlabs/php_codesniffer": "^3.7",
+		"wp-cli/i18n-command": "2.2.2"
+	},
+	"scripts": {
+		"phpcs": [
+			"phpcs -s -p"
+		],
+		"phpcs-pre-commit": [
+			"phpcs -s -p -n"
+		],
+		"phpcbf": [
+			"phpcbf -p"
+		],
+		"makepot-audit": [
+			"wp --allow-root i18n make-pot . --exclude=\".github,bin,node_modules\" --slug=customize-my-account-page"
+		],
+		"makepot": [
+			"@makepot-audit --skip-audit"
+		]
+	},
+	"extra": {
+		"scripts-description": {
+			"phpcs": "Analyze code against the WordPress coding standards with PHP_CodeSniffer",
+			"phpcbf": "Fix coding standards warnings/errors automatically with PHP Code Beautifier",
+			"makepot-audit": "Generate langauges/customize-my-account-page.pot file and run audit",
+			"makepot": "Generate langauges/customize-my-account-page.pot file"
+		}
+	},
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
+	}
+}
