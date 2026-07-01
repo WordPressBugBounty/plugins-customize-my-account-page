@@ -47,8 +47,9 @@ class Settings {
 		$this->tabs = apply_filters(
 			'tgwc_settings_tabs',
 			array(
-				'endpoints' => esc_html__( 'Endpoints', 'customize-my-account-page' ),
-				'settings'  => esc_html__( 'Settings', 'customize-my-account-page' ),
+				'endpoints'  => esc_html__( 'Endpoints', 'customize-my-account-page' ),
+				'customizer' => esc_html__( 'Customizer', 'customize-my-account-page' ),
+				'settings'   => esc_html__( 'Settings', 'customize-my-account-page' ),
 			)
 		);
 
@@ -77,6 +78,7 @@ class Settings {
 	 */
 	private function init_hooks() {
 		add_action( 'admin_menu', array( $this, 'register_menu' ) );
+		add_action( 'admin_head', array( $this, 'upgrade_menu_styles' ) );
 		add_action( 'admin_init', array( $this, 'register_setting' ) );
 		add_action( 'admin_init', array( $this, 'register_translation_strings' ) );
 		add_action( 'tgwc_customization_panel_tabs', array( $this, 'display_tabs' ) );
@@ -496,9 +498,65 @@ class Settings {
 			array( $this, 'display_settings_page' )
 		);
 
+		add_submenu_page(
+			'tgwc-customize-my-account',
+			esc_html__( 'Upgrade to Pro', 'customize-my-account-page' ),
+			'<span class="tgwc-upgrade-menu-item"><span class="tgwc-upgrade-menu-crown">' . tgwc_get_crown_svg() . '</span>' . esc_html__( 'Upgrade to Pro', 'customize-my-account-page' ) . '</span>',
+			'manage_options',
+			tgwc_get_upgrade_url( 'sidebar-menu' ),
+			''
+		);
+
 		remove_submenu_page( 'tgwc-customize-my-account', 'tgwc-customize-my-account' );
 
 		add_filter( 'submenu_file', array( $this, 'set_active_submenu' ) );
+	}
+
+	/**
+	 * Inline styles for the "Upgrade to Pro" admin menu item.
+	 *
+	 * Renders globally (the sidebar shows on every admin screen), so a small
+	 * inline rule is used instead of enqueuing a stylesheet everywhere.
+	 *
+	 * @since 1.0.0
+	 *
+	 * @return void
+	 */
+	public function upgrade_menu_styles() {
+		?>
+		<style id="tgwc-upgrade-menu-style">
+				#adminmenu .toplevel_page_tgwc-customize-my-account .tgwc-upgrade-menu-item {
+					display: inline-flex;
+					align-items: center;
+					gap: 6px;
+					color: #ff8c39;
+					font-weight: 600;
+				}
+				#adminmenu .toplevel_page_tgwc-customize-my-account .tgwc-upgrade-menu-crown {
+					display: inline-flex;
+					align-items: center;
+					justify-content: center;
+				}
+				#adminmenu .toplevel_page_tgwc-customize-my-account .tgwc-upgrade-menu-crown svg {
+					width: 16px;
+					height: 16px;
+					stroke: currentColor;
+					fill: none;
+				}
+				#adminmenu .toplevel_page_tgwc-customize-my-account a:hover .tgwc-upgrade-menu-item {
+					color: #ffb27a;
+				}
+			</style>
+			<script>
+			document.addEventListener( 'DOMContentLoaded', function() {
+				var link = document.querySelector( '#adminmenu .toplevel_page_tgwc-customize-my-account .tgwc-upgrade-menu-item' );
+				if ( link ) {
+					link.closest( 'a' ).setAttribute( 'target', '_blank' );
+					link.closest( 'a' ).setAttribute( 'rel', 'noopener noreferrer' );
+				}
+			} );
+			</script>
+		<?php
 	}
 
 	/**

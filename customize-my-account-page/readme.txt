@@ -1,10 +1,10 @@
-=== Customize My Account Page For WooCommerce  ===
+=== Customize My Account Page  ===
 Contributors: ThemeGrill
 Tags: woocommerce, my-account, user-avatar, customization, endpoints
 Requires at least: 5.5
-Tested up to: 6.8
+Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -39,6 +39,22 @@ Edit the default My Account Page by adding unlimited tabs, reordering menus item
 * **Custom Account Page Content:** Customize content on the WooCommerce My Account page using our WYSIWYG editor. Add rich content with formatted texts, medias, custom HTML codes. You can also integrate content from your theme and plugins through shortcodes.
 
 * **Personalize Content for Your Customers:** Personalize content for your customers through use of available smart tags: User ID, User Name, User Email, First Name, Last Name, User Display Name, User IP Address, Site Name, Site URL, Page URL, Current Date, Current Time, Billing Address, Billing Company, Shipping Address, and Shipping Company.
+
+### Premium Features of Customize My Account Page
+
+Upgrade to the Pro version to unlock powerful customization tools:
+
+* **Visual Customizer:** Style your My Account page without code — color palettes, layout styles, profile settings, and responsive spacing controls.
+
+* **Add Endpoint:** Create unlimited custom endpoints with their own label, slug, icon, and personalized page content.
+
+* **Add Group:** Organize menu items into groups to build a structured, easy-to-navigate account menu.
+
+* **Set Default Endpoint:** Choose which endpoint loads first when customers open their My Account page.
+
+* **AJAX Navigation:** Load account page tabs instantly without full page reloads for a smoother, app-like experience.
+
+👉 [Get complete Customize My Account page customization with the Premium version!](https://themegrill.com/plugins/customize-my-account-for-woocommerce/)
 
 ### How to Use Customize My Account Page for WooCommerce?
 
@@ -83,5 +99,10 @@ Yes, the plugin is designed to be compatible with popular WooCommerce extensions
 
 == Changelog ==
 
-= 1.0.0 - 09-12-2025 =
-* Initial release
+1.0.1 – 01-07-2026
+* Added - "Upgrade to Pro" admin sidebar menu item with crown icon.
+* Added - Pro feature badge popup system with upgrade call-to-action.
+* Added - Premium Features section to readme.
+
+1.0.0 – 09-12-2025
+* Initial release.

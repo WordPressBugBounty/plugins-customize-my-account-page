@@ -1,0 +1,8 @@
+*** Customize My Account For WooCommerce Lite Changelog ***
+1.0.1 – 01-07-2026
+* Added - "Upgrade to Pro" admin sidebar menu item with crown icon.
+* Added - Pro feature badge popup system with upgrade call-to-action.
+* Added - Premium Features section to readme.
+
+1.0.0 – 09-12-2025
+* Initial release.

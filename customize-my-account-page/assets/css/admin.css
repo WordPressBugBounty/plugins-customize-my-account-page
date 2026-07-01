@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
  * Import
  **/
@@ -2196,4 +2197,292 @@ div[role=tooltip] .ui-tooltip-content::after {
   width: 88% !important;
   top: 40px;
   left: 10%;
+}
+
+/* ==========================================================================
+   Premium feature upsell — crown badge, upgrade popup & locked states
+   ========================================================================== */
+.toplevel_page_tgwc-customize-my-account .tgwc-pro {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.toplevel_page_tgwc-customize-my-account .tgwc-pro__crown {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  background-color: #ff8c39;
+  color: #fff;
+  cursor: pointer;
+  flex: 0 0 auto;
+}
+
+.toplevel_page_tgwc-customize-my-account .tgwc-pro__crown svg {
+  width: 12px;
+  height: 12px;
+  stroke: #fff;
+  fill: none;
+}
+
+.toplevel_page_tgwc-customize-my-account .tgwc-pro__popup {
+  position: absolute;
+  top: calc(100% + 12px);
+  left: 50%;
+  transform: translateX(-50%) translateY(6px);
+  z-index: 9999;
+  width: 240px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  text-align: left;
+  white-space: normal;
+}
+
+.toplevel_page_tgwc-customize-my-account .tgwc-pro__popup::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 7px solid transparent;
+  border-bottom-color: #fff;
+}
+
+.toplevel_page_tgwc-customize-my-account .tgwc-pro:hover .tgwc-pro__popup,
+.toplevel_page_tgwc-customize-my-account .tgwc-pro__crown:focus + .tgwc-pro__popup {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+
+.toplevel_page_tgwc-customize-my-account .tgwc-pro__popup-text {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #23282d;
+  font-weight: 400;
+}
+
+.toplevel_page_tgwc-customize-my-account .tgwc-pro__popup-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background: #ff8c39;
+  color: #fff !important;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+.toplevel_page_tgwc-customize-my-account .tgwc-pro__popup-btn:hover {
+  background: #f57c1f;
+  color: #fff !important;
+}
+
+.toplevel_page_tgwc-customize-my-account .tgwc-pro__popup-btn-icon {
+  display: inline-flex;
+}
+
+.toplevel_page_tgwc-customize-my-account .tgwc-pro__popup-btn-icon svg {
+  width: 14px;
+  height: 14px;
+  stroke: #fff;
+  fill: none;
+}
+
+/* Locked "Customizer" tab */
+.toplevel_page_tgwc-customize-my-account .tgwc-tab--locked {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: default;
+}
+
+.toplevel_page_tgwc-customize-my-account .tgwc-tab--locked::after {
+  content: "";
+  position: absolute;
+  bottom: -14px;
+  left: 0;
+  right: 0;
+  height: 14px;
+}
+
+.toplevel_page_tgwc-customize-my-account .tgwc-tab--locked p {
+  color: #868e96;
+}
+
+/* Locked action-bar buttons (Add endpoint / Add group) */
+.toplevel_page_tgwc-customize-my-account .tgwc-locked-action {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.toplevel_page_tgwc-customize-my-account .tgwc-locked-action::after {
+  content: "";
+  position: absolute;
+  bottom: -14px;
+  left: 0;
+  right: 0;
+  height: 14px;
+}
+
+.toplevel_page_tgwc-customize-my-account .tgwc-button--locked,
+.toplevel_page_tgwc-customize-my-account .tgwc-button--locked:hover {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.toplevel_page_tgwc-customize-my-account .tgwc-button--locked > svg,
+.toplevel_page_tgwc-customize-my-account .tgwc-button--locked .btn-text {
+  opacity: 0.5;
+}
+
+.toplevel_page_tgwc-customize-my-account .tgwc-locked-action .tgwc-pro {
+  position: static;
+  display: contents;
+}
+
+/* Locked settings rows (Default Endpoint / AJAX Navigation) */
+.toplevel_page_tgwc-customize-my-account .tgwc-settings-row--locked .setting-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.toplevel_page_tgwc-customize-my-account .tgwc-settings-row--locked .tgwc-label-text,
+.toplevel_page_tgwc-customize-my-account .tgwc-settings-row--locked .setting-help {
+  opacity: 0.5;
+}
+
+.toplevel_page_tgwc-customize-my-account .tgwc-settings-row--locked .tgwc-locked-control {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.toplevel_page_tgwc-customize-my-account .tgwc-pro__crown svg path,
+.toplevel_page_tgwc-customize-my-account .tab:hover .tgwc-pro__crown svg path {
+  stroke: #fff !important;
+  fill: none !important;
+}
+
+/* Upsell refinements: hover triggers + disabled customizer color */
+.toplevel_page_tgwc-customize-my-account .tgwc-tab--locked:hover .tgwc-pro__popup,
+.toplevel_page_tgwc-customize-my-account .tgwc-locked-action:hover .tgwc-pro__popup {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+
+.toplevel_page_tgwc-customize-my-account .tgwc-tab--locked,
+.toplevel_page_tgwc-customize-my-account .tgwc-tab--locked:hover {
+  cursor: not-allowed;
+}
+
+.toplevel_page_tgwc-customize-my-account .tgwc-tab--locked p,
+.toplevel_page_tgwc-customize-my-account .tgwc-tab--locked:hover p {
+  color: #a7aaad !important;
+}
+
+/* Keep popup button crown white even inside a hovered .tab */
+.toplevel_page_tgwc-customize-my-account .tgwc-pro__popup-btn-icon svg,
+.toplevel_page_tgwc-customize-my-account .tgwc-pro__popup-btn-icon svg path,
+.toplevel_page_tgwc-customize-my-account .tab:hover .tgwc-pro__popup-btn-icon svg path {
+  stroke: #fff !important;
+  fill: none !important;
+}
+
+/* Inline crown inside locked action buttons (no absolute positioning) */
+.toplevel_page_tgwc-customize-my-account .tgwc-locked-action__crown {
+  margin-left: 6px;
+  vertical-align: middle;
+  flex: 0 0 auto;
+}
+
+/* Feature list popup (customizer tab) */
+.toplevel_page_tgwc-customize-my-account .tgwc-pro--has-features .tgwc-pro__popup {
+  width: 550px;
+  padding: 24px;
+}
+
+.toplevel_page_tgwc-customize-my-account .tgwc-pro__popup-title {
+  display: block;
+  margin-bottom: 16px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #1d2327;
+  line-height: 1.4;
+}
+
+.toplevel_page_tgwc-customize-my-account .tgwc-pro__features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 20px;
+  list-style: none;
+  margin: 0 0 18px;
+  padding: 0;
+}
+
+.toplevel_page_tgwc-customize-my-account .tgwc-pro__feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 0;
+}
+
+.toplevel_page_tgwc-customize-my-account .tgwc-pro__feature-icon {
+  flex: 0 0 34px;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0ebff;
+  border-radius: 8px;
+  color: #7c3aed;
+}
+
+.toplevel_page_tgwc-customize-my-account .tgwc-pro__feature-icon svg {
+  width: 16px;
+  height: 16px;
+  stroke: currentColor;
+  fill: none;
+}
+
+.toplevel_page_tgwc-customize-my-account .tgwc-pro__feature-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.toplevel_page_tgwc-customize-my-account .tgwc-pro__feature-title {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #1d2327;
+  line-height: 1.3;
+}
+
+.toplevel_page_tgwc-customize-my-account .tgwc-pro__feature-desc {
+  display: block;
+  font-size: 12px;
+  color: #6b7280;
+  line-height: 1.45;
 }

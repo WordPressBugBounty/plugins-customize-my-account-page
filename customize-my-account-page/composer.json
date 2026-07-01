@@ -1,11 +1,11 @@
 {
 	"name": "themegrill/customize-my-account-page",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A plugin for customizing WooCommerce my account page.",
 	"authors": [
 		{
-			"name": "themegrill",
-			"email": "hello@themegrill.com"
+			"name": "wpeverest",
+			"email": "support@wpeverest.com"
 		}
 	],
 	"autoload": {

@@ -1357,3 +1357,118 @@ if ( ! function_exists( 'tgwc_get_avatar_upload_size_mb' ) ) {
 		return round( $mb, 2 );
 	}
 }
+
+if ( ! function_exists( 'tgwc_get_upgrade_url' ) ) {
+	/**
+	 * Get the "Upgrade to Pro" URL.
+	 *
+	 * @since 1.0.0
+	 *
+	 * @param string $utm_content Optional UTM content to identify the upsell placement.
+	 *
+	 * @return string
+	 */
+	function tgwc_get_upgrade_url( $utm_content = '' ) {
+		$url = add_query_arg(
+			array(
+				'utm_source'   => 'cmap-lite',
+				'utm_medium'   => 'pro-upsell',
+				'utm_campaign' => 'cmap-upgrade',
+				'utm_content'  => $utm_content,
+			),
+			'https://themegrill.com/plugins/customize-my-account-for-woocommerce/'
+		);
+
+		return apply_filters( 'tgwc_upgrade_url', $url, $utm_content );
+	}
+}
+
+if ( ! function_exists( 'tgwc_get_crown_svg' ) ) {
+	/**
+	 * Get the crown SVG markup used on premium (locked) features.
+	 *
+	 * @since 1.0.0
+	 *
+	 * @return string
+	 */
+	function tgwc_get_crown_svg() {
+		return '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"/><path d="M5 21h14"/></svg>';
+	}
+}
+
+if ( ! function_exists( 'tgwc_pro_feature_badge' ) ) {
+	/**
+	 * Render a premium-feature crown badge with an upgrade popup.
+	 *
+	 * @since 1.0.0
+	 *
+	 * @param array $args {
+	 *     Optional. Badge arguments.
+	 *
+	 *     @type string $message     Popup message.
+	 *     @type string $button      Upgrade button label.
+	 *     @type string $utm_content UTM content slug for the upgrade URL.
+	 *     @type bool   $echo        Whether to echo or return the markup. Default true.
+	 * }
+	 *
+	 * @return string|void
+	 */
+	function tgwc_pro_feature_badge( $args = array() ) {
+		$args = wp_parse_args(
+			$args,
+			array(
+				'title'       => '',
+				'message'     => __( 'This is a premium feature, please Upgrade to Pro.', 'customize-my-account-page' ),
+				'features'    => array(),
+				'button'      => __( 'Upgrade to Pro', 'customize-my-account-page' ),
+				'utm_content' => 'pro-feature',
+				'no_crown'    => false,
+				'echo'        => true,
+			)
+		);
+
+		$crown = tgwc_get_crown_svg();
+
+		$has_features = ! empty( $args['features'] );
+		ob_start();
+		?>
+		<span class="tgwc-pro<?php echo $has_features ? ' tgwc-pro--has-features' : ''; ?>">
+			<?php if ( ! $args['no_crown'] ) : ?>
+			<span class="tgwc-pro__crown" aria-hidden="true"><?php echo $crown; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></span>
+			<?php endif; ?>
+			<span class="tgwc-pro__popup" role="tooltip">
+				<?php if ( ! empty( $args['title'] ) ) : ?>
+				<span class="tgwc-pro__popup-title"><?php echo esc_html( $args['title'] ); ?></span>
+				<?php endif; ?>
+				<?php if ( ! empty( $args['message'] ) ) : ?><span class="tgwc-pro__popup-text"><?php echo wp_kses( $args['message'], array( 'strong' => array() ) ); ?></span><?php endif; ?>
+				<?php if ( $has_features ) : ?>
+				<ul class="tgwc-pro__features" role="list">
+					<?php foreach ( $args['features'] as $feature ) : ?>
+					<li class="tgwc-pro__feature-item">
+						<?php if ( ! empty( $feature['icon'] ) ) : ?>
+						<span class="tgwc-pro__feature-icon" aria-hidden="true"><?php echo $feature['icon']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></span>
+						<?php endif; ?>
+						<span class="tgwc-pro__feature-content">
+							<strong class="tgwc-pro__feature-title"><?php echo esc_html( $feature['title'] ); ?></strong>
+							<span class="tgwc-pro__feature-desc"><?php echo esc_html( $feature['desc'] ); ?></span>
+						</span>
+					</li>
+					<?php endforeach; ?>
+				</ul>
+				<?php endif; ?>
+				<a class="tgwc-pro__popup-btn" href="<?php echo esc_url( tgwc_get_upgrade_url( $args['utm_content'] ) ); ?>" target="_blank" rel="noopener noreferrer">
+					<span class="tgwc-pro__popup-btn-icon"><?php echo $crown; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></span>
+					<?php echo esc_html( $args['button'] ); ?>
+				</a>
+			</span>
+		</span>
+		<?php
+		$markup = ob_get_clean();
+
+		if ( ! $args['echo'] ) {
+			return $markup;
+		}
+
+		echo $markup; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+	}
+}

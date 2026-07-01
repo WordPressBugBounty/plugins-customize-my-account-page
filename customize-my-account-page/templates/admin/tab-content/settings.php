@@ -14,6 +14,23 @@ use ThemeGrill\WoocommerceCustomizer\Icon;
 		<div class="settings settings-table">
 			<div class="settings-table-wrapper">
 
+				<!-- Default Endpoint (premium) -->
+				<div class="row tgwc-settings-row tgwc-settings-row--locked">
+					<div class="col-label tgwc-settings-col-label">
+						<p class="setting-label">
+							<span class="tgwc-label-text"><?php esc_html_e( 'Default Endpoint', 'customize-my-account-page' ); ?></span>
+							<?php tgwc_pro_feature_badge( array( 'utm_content' => 'default-endpoint' ) ); ?>
+						</p>
+						<span class="setting-help"><?php esc_html_e( 'Choose which endpoint loads first when a customer opens their account page.', 'customize-my-account-page' ); ?></span>
+					</div>
+					<div class="col-input">
+						<select class="tgwc-locked-control" disabled aria-disabled="true">
+							<option><?php esc_html_e( 'Dashboard', 'customize-my-account-page' ); ?></option>
+						</select>
+					</div>
+				</div>
+				<!-- ./ Default Endpoint -->
+
 				<!-- Custom avatar -->
 				<div class="row tgwc-settings-row">
 					<div class="col-label tgwc-settings-col-label">
@@ -32,6 +49,26 @@ use ThemeGrill\WoocommerceCustomizer\Icon;
 					</div>
 				</div>
 				<!-- ./ Custom avatar -->
+
+				<!-- AJAX Navigation (premium) -->
+				<div class="row tgwc-settings-row tgwc-settings-row--locked">
+					<div class="col-label tgwc-settings-col-label">
+						<p class="setting-label">
+							<span class="tgwc-label-text"><?php esc_html_e( 'AJAX Navigation', 'customize-my-account-page' ); ?></span>
+							<?php tgwc_pro_feature_badge( array( 'utm_content' => 'ajax-navigation' ) ); ?>
+						</p>
+						<span class="setting-help"><?php esc_html_e( 'Load account page sections without a full page reload for a smoother experience.', 'customize-my-account-page' ); ?></span>
+					</div>
+					<div class="col-input">
+						<div class="tgwc-toggle-section tgwc-locked-control">
+							<span class="tgwc-toggle-form">
+								<input type="checkbox" disabled aria-disabled="true" style="min-width: 350px;" />
+								<span class="slider round"></span>
+							</span>
+						</div>
+					</div>
+				</div>
+				<!-- ./ AJAX Navigation -->
 
 				<div class="tgwc-settings-developer-section">
 					<div class="tgwc-section-header">Developer Options</div>

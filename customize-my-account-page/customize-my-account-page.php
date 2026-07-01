@@ -1,13 +1,13 @@
 <?php
 /**
- * Plugin Name: Customize My Account Page For WooCommerce
- * Description: Allows you to register custom WooCommerce tabs on my-account page and customize the design.
+ * Plugin Name: Customize My Account Page
+ * Description: Add custom tabs to the WooCommerce My Account page and fully customize their design.
  * Requires at least: 5.5
  * Requires PHP: 7.4
  * Requires Plugins: woocommerce
  * Author: ThemeGrill
  * Author URI: https://themegrill.com
- * Version: 1.0.0
+ * Version: 1.0.1
  * Text Domain: customize-my-account-page
  * Domain Path: /languages
  * License: GNU General Public License v3 or later
